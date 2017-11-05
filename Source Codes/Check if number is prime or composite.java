@@ -4,7 +4,7 @@ public class prime
         public static void main (String arg[])
             {
                 Scanner in=new Scanner (System.in); //Preparing input function
-                double a, b=2, c=1, d; //Declaring variables and assigning values
+                double a, b=2, c=1; //Declaring variables and assigning values
                 System.out.print ("\n\t Enter the number: "); //Asking user for the number
                 a = in.nextDouble(); //Storing number as 'a' of data type 'double'
                 if (a==0 || a==1)
