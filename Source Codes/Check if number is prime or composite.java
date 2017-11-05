@@ -12,11 +12,11 @@ public class prime
                 else
                     {
                         while (b <= a/2)
-                        {
-                            if (a%b==0) //Check for modulus equal to 0
-                            c = 0;
-                            ++b;
-                        }
+                            {
+                                if (a%b==0) //Check for modulus equal to 0
+                                    c = 0;
+                                ++b;
+                            }
                         if (c==0) //Check for prime
                             System.out.println ("\n\t Is a composite number."); //Output not prime
                         else 
