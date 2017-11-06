@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 public class prime
     {
         public static void main (String arg[])
