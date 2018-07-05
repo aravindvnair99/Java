@@ -10,7 +10,7 @@ See the full list of [contributors](https://github.com/aravindvnair99/Java/graph
 
 # :heavy_exclamation_mark: Prerequisites aka requirements
 
-Please read [Prerequisite](https://github.com/aravindvnair99/Java/Prerequisite.md) file for details.
+Please read [Prerequisite](https://github.com/aravindvnair99/Java/blob/master/Prerequisite.md) file for details.
 
 # :scroll: Changelog
 
