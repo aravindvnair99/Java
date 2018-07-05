@@ -1,12 +1,12 @@
-# C
+# Java
 
-Collection of beginner friendly C programs.
+Collection of beginner friendly Java programs.
 
 # :book: How to use the repository?
 
-* [Source Codes Stable](https://github.com/aravindvnair99/C/tree/master/Source%20Codes%20Stable) contains codes that have been tested and are guaranteed to run. For any issues please report to us in the format mentioned below.
+* [Source Codes Stable](https://github.com/aravindvnair99/Java/tree/master/Source%20Codes%20Stable) contains codes that have been tested and are guaranteed to run. For any issues please report to us in the format mentioned below.
 
-* [Source Codes Testing](https://github.com/aravindvnair99/C/tree/master/Source%20Codes%20Testing) contains new codes that are being tested and are scheduled to be pushed to stable channel soon. For any issues please report to us in the format mentioned below. Feel free to also contribute. Details mentioned below.
+* [Source Codes Testing](https://github.com/aravindvnair99/Java/tree/master/Source%20Codes%20Testing) contains new codes that are being tested and are scheduled to be pushed to stable channel soon. For any issues please report to us in the format mentioned below. Feel free to also contribute. Details mentioned below.
 
 # :octocat: How to contribute?
 
@@ -20,10 +20,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 # :octocat: Team
 
-* **Abhishek Sai** - *Coder and tester* - [Abhishek-Sai](https://github.com/Abhishek-Sai)
 * **Aravind V. Nair** - *Coder and tester* - [AravindVNair99](https://github.com/aravindvnair99)
 
-See the full list of [contributors](https://github.com/aravindvnair99/C/graphs/contributors) who participated in this project and statistics.
+See the full list of [contributors](https://github.com/aravindvnair99/Java/graphs/contributors) who participated in this project and statistics.
 
 # :heavy_exclamation_mark: Prerequisites aka requirements
 
@@ -31,11 +30,11 @@ Please read [Prerequisite](Prerequisite.md) file for details.
 
 # :scroll: Changelog
 
-Check the [changelog here](https://github.com/aravindvnair99/C/commits/master).
+Check the [changelog here](https://github.com/aravindvnair99/Java/commits/master).
 
 # :scroll: I found some bugs or issues. Where do I report?
 
-Report [here](https://github.com/aravindvnair99/C/issues/new) in detail answering these questions:
+Report [here](https://github.com/aravindvnair99/Java/issues/new) in detail answering these questions:
 
 * What steps did you take to make the bug appear?
 * How can the bug be fixed? (In case you know)
@@ -45,4 +44,4 @@ Report [here](https://github.com/aravindvnair99/C/issues/new) in detail answerin
 
 # :scroll: How do I contact the team?
 
-Check [here](https://github.com/aravindvnair99/C/graphs/contributors) for the list of contributors. Contact one of them through their profiles.
+Check [here](https://github.com/aravindvnair99/Java/graphs/contributors) for the list of contributors. Contact one of them through their profiles.
