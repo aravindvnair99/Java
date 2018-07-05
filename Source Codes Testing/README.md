@@ -1,25 +1,24 @@
-# :heavy_exclamation_mark: C testing :warning:
+# :heavy_exclamation_mark: Java testing :warning:
 
-A bunch of C programs that are being tested. :x:
+A bunch of Java programs that are being tested. :x:
 
 # :octocat: Team
 
-* **Abhishek Sai** - *Coder and tester* - [Abhishek-Sai](https://github.com/Abhishek-Sai)
 * **Aravind V. Nair** - *Coder and tester* - [AravindVNair99](https://github.com/aravindvnair99)
 
-See the full list of [contributors](https://github.com/aravindvnair99/C/graphs/contributors) who participated in this project and statistics.
+See the full list of [contributors](https://github.com/aravindvnair99/Java/graphs/contributors) who participated in this project and statistics.
 
 # :heavy_exclamation_mark: Prerequisites aka requirements
 
-Please read [Prerequisite](Prerequisite.md) file for details.
+Please read [Prerequisite](https://github.com/aravindvnair99/Java/Prerequisite.md) file for details.
 
 # :scroll: Changelog
 
-Check the [changelog here](https://github.com/aravindvnair99/C/commits/master).
+Check the [changelog here](https://github.com/aravindvnair99/Java/commits/master).
 
 # :scroll: I found some bugs or issues. Where do I report?
 
-Report [here](https://github.com/aravindvnair99/C/issues/new) in detail answering these questions:
+Report [here](https://github.com/aravindvnair99/Java/issues/new) in detail answering these questions:
 
 * What steps did you take to make the bug appear?
 * How can the bug be fixed? (In case you know)
@@ -29,4 +28,4 @@ Report [here](https://github.com/aravindvnair99/C/issues/new) in detail answerin
 
 # :scroll: How do I contact the team?
 
-Check [here](https://github.com/aravindvnair99/C/graphs/contributors) for the list of contributors. Contact one of them through their profiles.
+Check [here](https://github.com/aravindvnair99/Java/graphs/contributors) for the list of contributors. Contact one of them through their profiles.
