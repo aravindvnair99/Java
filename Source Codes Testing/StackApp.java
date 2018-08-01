@@ -1,11 +1,10 @@
 import java.util.*;
 
-class StackX
-{
-private int maxSize;
-private long[] stackArray;
-private int top;  // points the current top of the stack
-public StackX(int s)
+class StackX {
+	private int maxSize;
+	private long[] stackArray;
+	private int top;  // points the current top of the stack
+	public StackX(int s)
 {
 maxSize = s;
 stackArray = new long[maxSize]; 
