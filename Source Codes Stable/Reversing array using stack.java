@@ -1,4 +1,4 @@
-ffimport java.util.Scanner;
+import java.util.Scanner;
 
 class StackX{
 	private int top;
