@@ -4,64 +4,40 @@ class StackX {
 	private int maxSize;
 	private long[] stackArray;
 	private int top;  // points the current top of the stack
-	public StackX(int s)
-{
-maxSize = s;
-stackArray = new long[maxSize]; 
-top = -1;
+	public StackX(int s) {
+        maxSize = s;
+        stackArray = new long[maxSize]; 
+        top = -1;
+    }
+    public void push(long j) {
+        if(isFull()) {
+          System.out.println("Stack is full");
+        }
+        else
+            stackArray[++top] = j;
+    }
+    public long pop() {
+        if(isEmpty()){
+            System.out.println("Stack is Empty"); 
+            return -99;
+        }
+        else
+            return stackArray[top--]; 
+    }
+    public long peek() {
+        return stackArray[top];
+    }
+    public boolean isEmpty() {
+        return (top == -1);
+    }
+    public boolean isFull() {
+        return (top == maxSize-1);
+    }
 }
-
-public void push(long j)
-
-{
-if(isFull())
-{
-  System.out.println("Stack is full");
-}
-else
-stackArray[++top] = j;
-
-}
-
-public long pop()
-
-{
-if(isEmpty()){
-System.out.println("Stack is Empty"); 
-return -99;
-}
-else
-return stackArray[top--]; 
-}
-
-public long peek()
-
-{
-return stackArray[top];
-}
-
-public boolean isEmpty()
-
-{
-return (top == -1);
-}
-
-public boolean isFull()
-
-{
-return (top == maxSize-1);
-}
-
-} 
-
-public class StackApp
-{
-public static void main(String[] args)
-{
-StackX theStack = new StackX(5); // creating an object of the class StackX
-
-Scanner scan = new Scanner(System.in);
-
+public class StackApp {
+    public static void main(String[] args) {
+        StackX theStack = new StackX(5); // creating an object of the class StackX
+        Scanner scan = new Scanner(System.in);
 		int opt = 0;
 		do {
 			System.out.println("1.Push");
@@ -78,11 +54,11 @@ Scanner scan = new Scanner(System.in);
 			theStack.push(data);
 				break;
 			case 2:
-                                         long p;
-                                         p=theStack.pop();
-                                         if(p==-99){}
-                                         else				
-                                           System.out.println("Popped value is " + p);
+				long p;
+				p=theStack.pop();
+				if(p==-99){}
+				else				
+				System.out.println("Popped value is " + p);
 				break;
 		/*	case 3:
 				System.out.println("Size is " + theStack.size());
@@ -100,6 +76,5 @@ Scanner scan = new Scanner(System.in);
 				break;
 			}
 		} while (opt != 6);
-} 
+    } 
 }
-
