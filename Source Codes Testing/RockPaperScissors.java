@@ -8,12 +8,12 @@ public class RockPaperScissors {
 		System.out.println("Enter 3 for scissor.");
 		System.out.println("Enter 4 for score.");
 		System.out.println("Press any other key to exit. \n");
+		int comp_point = 0, player_point = 0;
 		Scanner sc = new Scanner(System.in);
 		int player = sc.nextInt();
 		int comp = ThreadLocalRandom.current().nextInt(1,4);
-		int comp_point = 0, player_point = 0;
 		if (player == 1 || player == 2 || player == 3) {
-			if ((comp == 1 && player == 2) || (comp == 2 && player == 1) || (comp == 3 && player == 2)) {
+			if ((comp == 1 && player == 3) || (comp == 2 && player == 1) || (comp == 3 && player == 2)) {
 				comp_point++;
 				System.out.print("\nComputer wins with ");
 				if (comp == 1)
