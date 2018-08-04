@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class prime {
+public class PrimeComposite {
 	public static void main (String arg[]) {
 		Scanner in = new Scanner (System.in);
 		double a, b = 2, c = 1;

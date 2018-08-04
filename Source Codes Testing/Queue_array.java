@@ -64,7 +64,7 @@ class Queue
 	}
 }
 
-public class Queue_array {
+public class QueueArray {
 	public static void main(String args[]) {
 	Queue q = new Queue(); // create a queue object
 	q.enqueue(10);

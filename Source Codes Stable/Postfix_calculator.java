@@ -1,6 +1,6 @@
 import java.util.Stack;
  
-public class Postfix_calculator {
+public class PostfixCalculator {
 	static int evaluatePostfix(String exp) {
 		//Create a stack using built in stack
 		Stack<Integer> stack=new Stack<>();

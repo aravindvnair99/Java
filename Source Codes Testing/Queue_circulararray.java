@@ -71,7 +71,7 @@ class Queue
 
 }
 
-public class Queue_circulararray 
+public class QueueCircularArray 
 {
 	public static void main(String args[])
 	{

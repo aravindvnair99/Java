@@ -34,8 +34,7 @@ class Stack {
  	}
 }
 
-public class InfixtoPostfixConverter {
-
+public class InfixPostfixConverter {
  // A utility function to check if the given character is operand
  static boolean isOperand(char ch) {
 	return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
