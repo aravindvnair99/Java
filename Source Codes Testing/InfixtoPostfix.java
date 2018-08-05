@@ -1,3 +1,5 @@
+//Infix to Postfix expression converter
+
 class Stack {
  	private int maxSize;
 	private char[] S;

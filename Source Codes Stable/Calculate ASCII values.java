@@ -1,3 +1,5 @@
+//Calculate ASCII value of character
+
 import java.util.Scanner;
 
 public class Main {

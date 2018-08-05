@@ -1,4 +1,6 @@
-import java.util.*;
+//Check if sum of two numbers is prime or composite
+
+import java.util.Scanner;
 
 public class SumPrimeComposite {
 	public static void main (String arg[]) {

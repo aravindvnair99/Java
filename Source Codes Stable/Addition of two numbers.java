@@ -1,3 +1,5 @@
+//Addition of two numbers
+
 import java.util.Scanner;
 
 public class Addition {
