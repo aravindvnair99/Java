@@ -30,7 +30,7 @@ class SList
 		head=tail=null;   // empty list has null values for head and tail
 	}
 
-	public boolean isEmpty()  // returns true if list is empty{
+	public boolean isEmpty() { // returns true if list is empty{
 		return head==null;  // head is null in an empty list
 	}
 
@@ -77,49 +77,59 @@ class SList
 		return el;
 	}
 
-	public void displayAll()  // Display the conntents of nodes in the list
+	public void displayAllAndSum()  // Display the conntents of nodes in the list
 	{
 		LNode temp;
                     int sum=0;
 		if (isEmpty()) System.out.println("List is empty");
 		else
-		{
-			for (temp=head; temp !=null; temp=temp.next.next)
+		{ 
+			for (temp=head; temp !=null; temp=temp.next) {
 				sum=sum+temp.info;
-                               //System.out.print(temp.info + " ");
-			System.out.println(sum);
+                                        System.out.print(temp.info + " ");}
+			System.out.println("\n"+"sum="+sum);
+		}
+	}
+          public void displayAlternate()  // Display the conntents of nodes in the list
+	{
+		LNode temp;
+                    int sum=0;
+		if (isEmpty()) System.out.println("List is empty");
+		else
+		{ 
+			for (temp=head; temp !=null; temp=temp.next.next) {
+                                        System.out.print(temp.info + " ");
+                                        if(temp==tail)
+                                          break;
+                             }
+			
 		}
 	}
 
-	public void delete(int el)  // delete the node with an element el;
-	{
-		if (!isEmpty())
-		{
-			if (head == tail && el == head.info) // if only one
-				head = tail = null;
-			// node on the list;
-			else if (el == head.info) // if more than one node on the
+	public void delete(int el)  { // delete the node with an element el;
+		if (!isEmpty()) {
+	              if (head == tail && el == head.info) // if only one node on the list;
+				head = tail = null;	
+		    else if (el == head.info) // if more than one node on the list; and el is in the head node;
 				head = head.next;
-			// list; and el is in the head node;
-			else 
-			{
+
+			else  {
 				// if more than one node in the list
 				LNode pred, temp;   // and el is in a non-head node;
 				pred = head;
 				for (temp = head.next; temp != null && temp.info != el; 
-								pred = pred.next, temp = temp.next);
-				if (temp != null) 
-				{
+							pred = pred.next, temp = temp.next);
+				if (temp != null) {
 					// if el was found;
 					pred.next = temp.next;
 					if (temp == tail) // if el is in the last node;
-						tail = pred;
+					   tail = pred;
 				}
 			}
 		}
 	}
 
-	public void insertAfter(int el, int newel)  // insert el after newel
+	public void insertAfter(int el, int newel)  // insert newel after el
 	{
 		if (!isEmpty())
 		{
@@ -154,8 +164,9 @@ public class LinkedListApp
 		{
 			System.out.println("Enter option: 1 insert front, 2 insert last");
 			System.out.println("              3 delete front, 4 delete last");
-			System.out.println("              5 display list, 0 Exit");
-			option=kbd.nextInt();
+			System.out.println("              5 displayAllAndSum, 6 InsertAfter");
+                              System.out.println("              7 delete_element, 8 displayAlternate   0 Exit");
+			option=kbd.nextInt(); 
 
 			switch (option) {
 				case 1: System.out.println("Enter element:");
@@ -180,13 +191,21 @@ public class LinkedListApp
 					System.out.println("Removed elemen " + elem + " from rear");
 					}
 					break;
-				case 5: ll.displayAll();
+				case 5: ll.displayAllAndSum();
 					break;
-
+                                        case 6:System.out.println("Enter an element after which to be inserted");
+                                               System.out.println("Enter the element to be inserted");    
+                                               ll.insertAfter(kbd.nextInt(),kbd.nextInt());
+                                               break;
+                                        case 8: ll.displayAlternate();
+                                                  break;
+                                        case 7: System.out.println("Enter the element to be deleted");
+                                                ll.delete(kbd.nextInt());
+                                                break;
 				case 0: break;
 				default: System.out.println("Invalid Entry ");
 			}
 		} while (option !=0);
-
+              
 	} // end main()
 }
