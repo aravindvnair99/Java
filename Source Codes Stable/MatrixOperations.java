@@ -1,31 +1,45 @@
 import java.util.Scanner;
 
-public class Main {
+public class MatrixOperations {
 	public static void main(String[] args) {
 	    int r1, c1, r2, c2;
 	    Scanner sc = new Scanner(System.in);
-	    System.out.println("Enter the number of rows for 1st matrix");
+	    System.out.print("Enter the number of rows for 1st matrix: ");
 	    r1 = sc.nextInt();
-	    System.out.println("Enter the number of columns for 1st matrix");
+	    System.out.print("\nEnter the number of columns for 1st matrix: ");
 	    c1 = sc.nextInt();
 	    int[][] a = new int[r1][c1];
-	    System.out.println("Enter the elements of 1st matrix:");
+	    System.out.println("\nEnter the elements of 1st matrix:\n");
     	for (int i=0; i<r1; i++) {
     		for (int j=0; j<c1; j++) {
     			a[i][j] = sc.nextInt();
     		}
     	}
-	    System.out.println("Enter the number of rows for 2nd matrix");
+	    System.out.print("\nEnter the number of rows for 2nd matrix: ");
 	    r2 = sc.nextInt();
-	    System.out.println("Enter the number of columns for 2nd matrix");
+	    System.out.print("\nEnter the number of columns for 2nd matrix: ");
 	    c2 = sc.nextInt();
     	int[][] b = new int[r2][c2];
-    	System.out.println("Enter the elements of 2nd matrix:");
+    	System.out.println("\nEnter the elements of 2nd matrix:\n");
     	for (int i=0; i<r2; i++) {
     		for (int j=0; j<c2; j++) {
-    			a[i][j] = sc.nextInt();
+    			b[i][j] = sc.nextInt();
     		}
     	}
+    	System.out.println("\nThe elements of the first matrix are:\n");
+    	for (int i=0; i<r1; i++) {
+			for (int j=0; j<c1; j++) {
+				System.out.print(a[i][j] + "\t");
+			}
+			System.out.println();
+		}
+    	System.out.println("\nThe elements of the second matrix are:\n");
+    	for (int i=0; i<r1; i++) {
+			for (int j=0; j<c2; j++) {
+				System.out.print(b[i][j] + "\t");
+			}
+			System.out.println();
+		}
 		int[][] c = new int[r1][c1];
 		if (r1==r2 && c1==c2) {
     		for (int i=0; i<r1; i++) {
@@ -33,16 +47,16 @@ public class Main {
     				c[i][j]=a[i][j]+b[i][j];
     			}
     		}
-		    System.out.println("The addition of the matrices are \n");
+		    System.out.println("\nThe addition of the matrices are \n");
     		for (int i=0; i<r1; i++) {
     			for (int j=0; j<c1; j++) {
-    				System.out.println(c[i][j] + "\t");
+    				System.out.print(c[i][j] + "\t");
     			}
-    			System.out.println("\n");
+    			System.out.println();
     		}
     	}
     	else {
-    		System.out.println("Dimensions are wrong! \n");
+    		System.out.println("\nDimensions are wrong!\n");
     	}
 		int[][] d = new int[r1][c1];
 		if (r1==r2 && c1==c2) {
@@ -54,13 +68,13 @@ public class Main {
 			System.out.println("\nThe subtraction of the matrices are \n");
 			for (int i=0; i<r1; i++) {
 				for(int j=0; j<c1; j++) {
-					System.out.println(d[i][j] + "\t");
+					System.out.print(d[i][j] + "\t");
 				}
 				System.out.println();
 			}
 		}
 		else {
-			System.out.println("Dimensions are wrong!\n");
+			System.out.println("\nDimensions are wrong!\n");
 		}
 		int[][] m = new int[r1][c2];
 		if (c1==r2) {
@@ -72,16 +86,16 @@ public class Main {
 					}
 				}
 			}
-			System.out.println("The multiplication of the matrices are");
+			System.out.println("\nThe multiplication of the matrices are\n");
 			for (int i=0; i<r1; i++) {
 				for (int j=0; j<c2; j++) {
-					System.out.println(m[i][j] + "\t");
+					System.out.print(m[i][j] + "\t");
 				}
-				System.out.println("\n");
+				System.out.println();
 			}
 		}
 		else {
-			System.out.println("Matrix multiplication is not possible\n");
+			System.out.println("\nMatrix multiplication is not possible\n");
 		}
 		int[][] at = new int[r1][c1];
 		if (r1==c1) {
@@ -90,16 +104,16 @@ public class Main {
 					at[j][i] = a[i][j];
 				}
 			}
-			System.out.println("The transpose of A is");
+			System.out.println("\nThe transpose of first matrix is\n");
 			for (int i=0; i<r1; i++) {
 				for (int j=0; j<c1; j++) {
-					System.out.println(at[i][j] + "\t");
+					System.out.print(at[i][j] + "\t");
 				}
-				System.out.println("\n");
+				System.out.println();
 			}
 		}
 		else {
-			System.out.println("The transpose of A is not possible");
+			System.out.println("\nThe transpose of first matrix is not possible.\n");
 		}
 		int[][] bt = new int[r2][c2];
 		if (r2==c2) {
@@ -108,16 +122,16 @@ public class Main {
 					bt[j][i] = b[i][j];
 				}
 			}
-			System.out.println("The transpose of B is \n");
+			System.out.println("\nThe transpose of second matrix is \n");
 			for (int i=0; i<r2; i++) {
 				for (int j=0; j<c2; j++) {
-					System.out.println(bt[i][j] + "\t");
+					System.out.print(bt[i][j] + "\t");
 				}
-				System.out.println("\n");
+				System.out.println();
 			}
 		}
 		else {
-			System.out.println("The transpose of B is not possible.\n");
+			System.out.println("\nThe transpose of B is not possible.\n");
 		}
 	}
 }
