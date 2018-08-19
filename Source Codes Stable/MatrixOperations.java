@@ -1,3 +1,5 @@
+//Matrix Operations - Addition, Subtraction, Multiplication and Transpose of 2 matrices
+
 import java.util.Scanner;
 
 public class MatrixOperations {
@@ -133,5 +135,6 @@ public class MatrixOperations {
 		else {
 			System.out.println("\nThe transpose of B is not possible.\n");
 		}
+		sc.close();
 	}
 }

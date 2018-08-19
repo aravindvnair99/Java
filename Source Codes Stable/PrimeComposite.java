@@ -21,5 +21,6 @@ public class PrimeComposite {
 			else 
 				System.out.println("Is a Prime number.");
 		}
+		in.close();
 	}
 }

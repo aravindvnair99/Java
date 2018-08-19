@@ -1,3 +1,5 @@
+//Area and Perimeter of a rectangle
+
 import java.util.Scanner;
 
 public class AreaPerimeter {
@@ -10,5 +12,6 @@ public class AreaPerimeter {
 		bre = sc.nextDouble();
 		System.out.println("Area of the rectangle is = " + ((len * bre)));
 		System.out.println("Perimeter of the rectangle is = " + (2 * (len + bre)));
+		sc.close();
 	}
 }

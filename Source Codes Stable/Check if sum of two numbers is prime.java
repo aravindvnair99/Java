@@ -21,5 +21,6 @@ public class SumPrimeComposite {
 			System.out.println ("\n\tSum of the numbers is NOT a prime number."); //Output not prime
 		else 
 			System.out.println ("\n\tSum of the numbers is a Prime number."); //Output prime
+		in.close();
 	}
 }

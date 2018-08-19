@@ -12,5 +12,6 @@ public class Average {
 		b = in.nextDouble();
 		a += b;
 		System.out.println("Sum = " + a + " Average = " + (a /2.0));
+		in.close();
 	}
 }

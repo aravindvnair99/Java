@@ -12,5 +12,6 @@ public class Main {
 		a = (char) System.in.read();
 		b = (int) a;
 		System.out.println("The ASCII value of " + a + " is = " + b);
+		in.close();
 	}
 }

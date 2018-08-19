@@ -1,5 +1,8 @@
+//Make a 2D array
+
 import java.util.Scanner;
-public class ArraySize2D {
+
+public class Array2D {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int[][] a = new int[2][3];
@@ -14,8 +17,6 @@ public class ArraySize2D {
 			}
 			System.out.println();
 		}
-		
-		
+		sc.close();	
 	}
-
 }

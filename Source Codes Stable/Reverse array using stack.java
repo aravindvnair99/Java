@@ -21,6 +21,7 @@ public class Main {
 		System.out.println("\nArray after reversing:");
 		for (int i=0; i<n; i++) {
 			System.out.println(a[i] = as.pop());
-		}	
+		}
+		sc.close();
 	}
 }
