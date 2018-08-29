@@ -1,14 +1,13 @@
 
 import java.util.*;
 // demonstrates LinkedList
-////////////////////////////////////////////////////////////////
 
 // Class definition for a node in the linked list
 class LNode
 {
 	public int info;   // Stores the data
 	public LNode next; // Link pointer to the next node in the list
-	//--------------------------------------------------------------
+
 	public LNode(int item)
 	// constructor
 	{
@@ -31,7 +30,7 @@ class SList
 	}
 
 	public boolean isEmpty() { // returns true if list is empty{
-		return head==null;  // head is null in an empty list
+		return (head==null);  // head is null in an empty list
 	}
 
 	public void insertFront(int el) // insert a new node at the beginning of list
