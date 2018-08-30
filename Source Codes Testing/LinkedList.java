@@ -64,6 +64,32 @@ class SList {
 		return el;
 	}
 
+	public void deleteAt(int pos) {
+        if (isEmpty())
+            return;
+        // Store head node
+        LNode temp = head;
+        // If head needs to be removed
+        if (pos == 0) {
+            head = temp.next;   // Change head
+            return;
+        }
+ 
+        // Find previous node of the node to be deleted
+        for (int i=0; temp!=null && i< pos-1; i++)
+            temp = temp.next;
+ 
+        // If position is more than number of nodes
+        if (temp == null || temp.next == null)
+            return;
+ 
+        // Node temp->next is the node to be deleted
+        // Store pointer to the next of node to be deleted
+        LNode next = temp.next.next;
+        temp.next = next;  // Unlink the deleted node from list
+        System.out.println("Removed element " + temp.info  + " from position " + pos);
+	}
+
 	public void displayAllAndSum() {
 		LNode temp;
 		int sum = 0;
@@ -141,11 +167,9 @@ public class LinkedList {
 		int elem;
 		Scanner kbd = new Scanner(System.in);
 		do {
-			System.out.println("Enter option:"
-					+ "\n\n1 Insert front\t2 Insert last\t3 Insert After"
-					+ "\n\n6 Delete front\t4 Delete last\t7 Delete element"
-					+ "\n\n5 Display all and sum\t8 Display alternate"
-					+ "\n\n0 Exit");
+			System.out.println("Enter option:" + "\n\n1 Insert front\t2 Insert last\t3 Insert After"
+					+ "\n\n4 Delete front\t5 Delete last\t6 Delete element\t9 Delete At"
+					+ "\n\n7 Display all and sum\t8 Display alternate" + "\n\n0 Exit");
 			option = kbd.nextInt();
 			switch (option) {
 			case 1:
@@ -158,7 +182,12 @@ public class LinkedList {
 				elem = kbd.nextInt();
 				ll.insertLast(elem);
 				break;
-			case 6:
+			case 3:
+				System.out.println("Enter an element after which to be inserted:");
+				System.out.println("Enter the element to be inserted");
+				ll.insertAfter(kbd.nextInt(), kbd.nextInt());
+				break;
+			case 4:
 				if (ll.isEmpty())
 					System.out.println("Error: Empty List");
 				else {
@@ -166,34 +195,36 @@ public class LinkedList {
 					System.out.println("Removed element " + elem + " from front");
 				}
 				break;
-			case 4:
+			case 5:
 				if (ll.isEmpty())
 					System.out.println("Error: Empty List");
 				else {
 					elem = ll.deleteLast();
-					System.out.println("Removed elemen " + elem + " from rear");
+					System.out.println("Removed element " + elem + " from rear");
 				}
 				break;
-			case 5:
-				ll.displayAllAndSum();
-				break;
-			case 3:
-				System.out.println("Enter an element after which to be inserted");
-				System.out.println("Enter the element to be inserted");
-				ll.insertAfter(kbd.nextInt(), kbd.nextInt());
-				break;
-			case 7:
+			case 6:
 				System.out.println("Enter the element to be deleted");
 				ll.delete(kbd.nextInt());
 				break;
+			case 7:
+				ll.displayAllAndSum();
+				break;
 			case 8:
 				ll.displayAlternate();
+				break;
+			case 9:
+				if (ll.isEmpty())
+					System.out.println("Error: Empty List");
+				else {
+					ll.deleteAt(kbd.nextInt());
+				}
 				break;
 			case 0:
 				kbd.close();
 				break;
 			default:
-				System.out.println("Invalid Entry ");
+				System.out.println("Error: Invalid entry.");
 			}
 		} while (option != 0);
 	}
