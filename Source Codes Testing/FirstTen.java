@@ -14,5 +14,4 @@ public class FirstTen {
 		System.out.println("Sum is : "+sum);
 		sc.close();
 	}
-
 }
