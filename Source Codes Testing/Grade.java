@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Grade {
 	public static void main(String[] args) {
-		System.out.println("Enter your grade:");
+		System.out.println("Enter your mark:");
 		Scanner sc = new Scanner(System.in);
 		float mark = sc.nextFloat();
 		if (mark >= 80 && mark <= 100)
