@@ -3,13 +3,13 @@ import java.util.Scanner;
 class Donor {
 	String blood_group, name;
 	void save(Scanner sc) {
-		System.out.println("Enter the name:");
+		System.out.println("\nEnter the name:");
 		name = sc.next();
-		System.out.println("Enter the blood group:");
+		System.out.println("\nEnter the blood group:");
 		blood_group = sc.next();
 	}
 	void print() {
-		System.out.println("Name is " + name + " and blood group is " + blood_group + ".");
+		System.out.println("\nName is " + name + " and blood group is " + blood_group + ".");
 	}
 }
 public class ArrayOfObjects {
@@ -24,7 +24,7 @@ public class ArrayOfObjects {
 		}
 		for (int i = 0; i < n; i++) {
 			if (d[i].blood_group .equals("B+")) {
-				System.out.println("Donor ID is " + i);
+				System.out.println("Donor ID is " + i+1);
 				d[i].print();
 			}
 			else
