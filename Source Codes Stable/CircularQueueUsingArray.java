@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class QueueCircularArray {
+public class CircularQueueUsingArray {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		System.out.print("Enter total no of elements to be in the queue: ");
@@ -41,10 +41,7 @@ public class QueueCircularArray {
 }
 
 class CircularQueue {
-	int maxSize;
-	int rear;
-	int front;
-	int aQueue[];
+	int maxSize, rear, front, aQueue[];
 	{
 		rear = -1;
 		front = -1;
