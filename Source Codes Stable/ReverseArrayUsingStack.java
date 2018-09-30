@@ -12,14 +12,14 @@ public class Main {
 		Stack<Integer> as = new Stack<Integer>();
 		int[] a = new int[n];
 		System.out.println("\nEnter the elements of the array:");
-		for (int i=0; i<n; i++) {
+		for (int i = 0; i < n; i++) {
 			a[i] = sc.nextInt();
 		}
-		for (int i=0; i<n; i++) {
+		for (int i = 0; i < n; i++) {
 			as.push(a[i]);
 		}
 		System.out.println("\nArray after reversing:");
-		for (int i=0; i<n; i++) {
+		for (int i = 0; i < n; i++) {
 			System.out.println(a[i] = as.pop());
 		}
 		sc.close();

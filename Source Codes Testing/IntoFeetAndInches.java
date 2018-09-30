@@ -6,8 +6,8 @@ public class IntoFeetAndInches {
 		int inch, feet;
 		System.out.println("Enter the size in inches");
 		inch = sc.nextInt();
-		feet = inch/12;
-		inch = inch%12;
-		System.out.println(feet+" Feet and "+inch+" inches");
+		feet = inch / 12;
+		inch = inch % 12;
+		System.out.println(feet + " Feet and " + inch + " inches");
 	}
 }

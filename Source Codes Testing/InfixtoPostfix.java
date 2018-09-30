@@ -1,20 +1,23 @@
 //Infix to Postfix expression converter
 
 class Stack {
- 	private int maxSize;
+	private int maxSize;
 	private char[] S;
- 	private int top; // points the current top of the stack
- 	public Stack() {
+	private int top; // points the current top of the stack
+
+	public Stack() {
 		maxSize = 10;
 		S = new char[maxSize];
 		top = -1;
 	}
- 	public void push(char j) {
+
+	public void push(char j) {
 		if (isFull())
 			System.out.println("Stack is full");
 		else
 			S[++top] = j;
- 	}
+	}
+
 	public char pop() {
 		if (isEmpty()) {
 			System.out.println("Stack is Empty");
@@ -22,45 +25,50 @@ class Stack {
 		} else
 			return S[top--];
 	}
+
 	public char topelement() {
 		if (!isEmpty())
-	 		return S[top];
+			return S[top];
 		else
 			return '0';
- 	}
- 	public boolean isEmpty() {
+	}
+
+	public boolean isEmpty() {
 		return (top == -1);
- 	}
- 	public boolean isFull() {
+	}
+
+	public boolean isFull() {
 		return (top == maxSize - 1);
- 	}
+	}
 }
 
 public class InfixPostfixConverter {
- // A utility function to check if the given character is operand
- static boolean isOperand(char ch) {
-	return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
- }
- // A utility function to return precedence of a given operator
- // Higher returned value means higher precedence
- static int Prec(char ch) {
-	switch (ch) {
-	 case '+':
-	 case '-':
-	return 1;
-
-	 case '*':
-	 case '/':
-	return 2;
-
-	 case '^':
-	return 3;
+	// A utility function to check if the given character is operand
+	static boolean isOperand(char ch) {
+		return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
 	}
-	return -1;
- }
- // The main function that converts given infix expression
- // to postfix expression. 
- static void infixToPostfix(String exp) {
+
+	// A utility function to return precedence of a given operator
+	// Higher returned value means higher precedence
+	static int Prec(char ch) {
+		switch (ch) {
+		case '+':
+		case '-':
+			return 1;
+
+		case '*':
+		case '/':
+			return 2;
+
+		case '^':
+			return 3;
+		}
+		return -1;
+	}
+
+	// The main function that converts given infix expression
+	// to postfix expression.
+	static void infixToPostfix(String exp) {
 	int i, k;
 
 	// Create a stack of capacity 
@@ -100,8 +108,8 @@ public class InfixPostfixConverter {
 
 	// Driver program to test above functions
 	public static void main(String args[]) {
-	 String exp = "a+b*(c+d)";
-	 infixToPostfix(exp);
-	 // return 0;
+		String exp = "a+b*(c+d)";
+		infixToPostfix(exp);
+		// return 0;
 	}
- }
+}

@@ -10,6 +10,7 @@ public class PasswordGenerator {
 		System.out.println(generatePswd(sc.nextInt()));
 		sc.close();
 	}
+
 	static char[] generatePswd(int len) {
 		System.out.println("\nYour password is:\n");
 		String charsCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";

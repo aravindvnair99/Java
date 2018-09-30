@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class MultiplicationTableUsing2D {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -10,7 +11,7 @@ public class MultiplicationTableUsing2D {
 		int r2 = sc.nextInt();
 		System.out.println("Enter the number of columns ");
 		int c2 = sc.nextInt();
-		if(r1==r2 && c1==c2){
+		if (r1 == r2 && c1 == c2) {
 			int[][] a = new int[r1][c1];
 			int[][] b = new int[r2][c2];
 			int[][] sum = new int[r2][c2];
@@ -28,23 +29,20 @@ public class MultiplicationTableUsing2D {
 			}
 			for (int i = 0; i < r1; i++) {
 				for (int j = 0; j < c1; j++) {
-					sum[i][j]=a[i][j] + b[i][j]; 
+					sum[i][j] = a[i][j] + b[i][j];
 				}
 			}
 			for (int i = 0; i < r1; i++) {
 				for (int j = 0; j < c1; j++) {
-					System.out.print(sum[i][j]+" "); 
+					System.out.print(sum[i][j] + " ");
 				}
 				System.out.println();
 			}
-			
-		}
-		else{
+
+		} else {
 			System.out.println("Not a compatible matrix");
 		}
-		
-		
-		
+
 	}
 
 }

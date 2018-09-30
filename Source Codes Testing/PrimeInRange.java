@@ -8,14 +8,14 @@ public class PrimeInRange {
 		int ll = sc.nextInt();
 		System.out.println("Enter upper limit:");
 		int ul = sc.nextInt();
-		for( int i=ll;i<=ul;i++){
-			count =0;
-			for(j=1;j<=i;j++){
-				if(i%j==0){
+		for (int i = ll; i <= ul; i++) {
+			count = 0;
+			for (j = 1; j <= i; j++) {
+				if (i % j == 0) {
 					count++;
 				}
 			}
-			if(count == 2){
+			if (count == 2) {
 				System.out.println(i);
 			}
 		}

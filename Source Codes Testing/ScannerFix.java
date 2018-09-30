@@ -1,13 +1,16 @@
 import java.util.Scanner;
+
 class Operations {
 	int n;
+
 	void ask(Scanner sc) {
 		System.out.println("Enter number:");
 		n = sc.nextInt();
-		
+
 	}
 }
-public class ScannerFix {	
+
+public class ScannerFix {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Operations a = new Operations();

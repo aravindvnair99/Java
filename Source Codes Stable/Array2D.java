@@ -17,6 +17,6 @@ public class Array2D {
 			}
 			System.out.println();
 		}
-		sc.close();	
+		sc.close();
 	}
 }

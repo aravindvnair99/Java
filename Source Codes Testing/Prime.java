@@ -3,23 +3,23 @@ import java.util.Scanner;
 public class Prime {
 	static void check(int l, int u) {
 		int count = 0, prime = 0;
-		for(int i = l; i <= u; i++) {
+		for (int i = l; i <= u; i++) {
 			for (int j = 1; j <= i; j++) {
-				if(i%j == 0) {
+				if (i % j == 0) {
 					count++;
 				}
 			}
 			if (count != 2) {
 				count = 0;
 				continue;
-			}
-			else {
+			} else {
 				count = 0;
 				prime++;
 			}
 		}
 		System.out.println("The number of primes are: " + prime);
 	}
+
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the lower range:");

@@ -6,8 +6,7 @@ public class TempConversion {
 		double far, cel;
 		System.out.println("Enter the temperature in Farheniet");
 		far = sc.nextDouble();
-		cel = ((far - 32)*5)/9;
-		System.out.println("The temperature in Celsius is "+cel);
+		cel = ((far - 32) * 5) / 9;
+		System.out.println("The temperature in Celsius is " + cel);
 	}
-
 }

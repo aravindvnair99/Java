@@ -1,18 +1,22 @@
 import java.util.Scanner;
+
 class stack {
 	int top = -1;
 	char s[];
 	int n;
+
 	stack() {
 		s = new char[20];
-		n=20;
+		n = 20;
 	}
+
 	void push(char e) {
-		if (top == n-1)
+		if (top == n - 1)
 			System.out.println("Full");
 		else
 			s[++top] = e;
 	}
+
 	char pop() {
 		if (top != -1)
 			return (s[top--]);
@@ -20,6 +24,7 @@ class stack {
 			return '0';
 	}
 }
+
 public class ReplaceReverse {
 	public static void main(String[] args) {
 		stack st = new stack();
