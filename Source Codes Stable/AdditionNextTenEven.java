@@ -12,5 +12,6 @@ public class AdditionNextTenEven {
 		  num++;
 		}
 		System.out.print("Sum of next 10 even numbers are: " + sum);
+		sc.close();
 	}
 }
