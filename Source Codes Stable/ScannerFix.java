@@ -1,3 +1,5 @@
+// Avoid Scanner closing bugs in Java in this manner by passing it as an object
+
 import java.util.Scanner;
 
 class Operations {
@@ -6,7 +8,6 @@ class Operations {
 	void ask(Scanner sc) {
 		System.out.println("Enter number:");
 		n = sc.nextInt();
-
 	}
 }
 
