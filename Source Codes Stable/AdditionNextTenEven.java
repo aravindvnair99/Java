@@ -1,3 +1,5 @@
+// Addition of next 10 even numbers from user input
+
 import java.util.Scanner;
 
 public class AdditionNextTenEven {

@@ -1,3 +1,5 @@
+// Program to demonstrate array of objects concept
+
 import java.util.Scanner;
 
 class Donor {

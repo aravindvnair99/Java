@@ -67,7 +67,6 @@ class SList {
 	public void deleteAt(int pos) {
 		if (isEmpty())
 			return;
-		// Store head node
 		LNode temp = head;
 		// If head needs to be removed
 		if (pos == 0) {
@@ -100,7 +99,7 @@ class SList {
 				sum = sum + temp.info;
 				System.out.print(temp.info + " ");
 			}
-			System.out.println("\n" + "sum=" + sum);
+			System.out.println("\n" + "Sum=" + sum);
 		}
 	}
 
@@ -117,25 +116,25 @@ class SList {
 		}
 	}
 
-	public void delete(int el) { // delete the node with an element el;
+	public void delete(int el) { // delete the node with an element el
 		if (!isEmpty()) {
 			if (head == tail && el == head.info) // if only one node on the
-				// list;
+				// list
 				head = tail = null;
-			else if (el == head.info) // if more than one node on the list; and
-				// el is in the head node;
+			else if (el == head.info) // if more than one node on the list and
+				// el is in the head node
 				head = head.next;
 
 			else {
 				// if more than one node in the list
-				LNode pred, temp; // and el is in a non-head node;
+				LNode pred, temp; // and el is in a non-head node
 				pred = head;
 				for (temp = head.next; temp != null && temp.info != el; pred = pred.next, temp = temp.next)
 					;
 				if (temp != null) {
 					// if el was found;
 					pred.next = temp.next;
-					if (temp == tail) // if el is in the last node;
+					if (temp == tail) // if el is in the last node
 						tail = pred;
 				}
 			}
@@ -144,14 +143,14 @@ class SList {
 
 	public void insertAfter(int el, int newel) {
 		if (!isEmpty()) {
-			LNode temp; // and el is in a non-head node;
+			LNode temp; // and el is in a non-head node
 			temp = head;
 			for (temp = head; temp != null && temp.info != el; temp = temp.next)
 				;
 			if (temp == null)
 				System.out.println("Element " + el + " not in list");
 			else {
-				// if el was found;
+				// if el was found
 				temp.next = new LNode(newel, temp.next);
 				if (tail == temp)
 					tail = temp.next;
@@ -184,8 +183,10 @@ public class LinkedList {
 				break;
 			case 3:
 				System.out.println("Enter an element after which to be inserted:");
+				int a = kbd.nextInt();
 				System.out.println("Enter the element to be inserted");
-				ll.insertAfter(kbd.nextInt(), kbd.nextInt());
+				int b = kbd.nextInt();
+				ll.insertAfter(a, b);
 				break;
 			case 4:
 				if (ll.isEmpty())

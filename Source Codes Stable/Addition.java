@@ -1,4 +1,4 @@
-//Addition of two numbers
+// Addition of two numbers from input
 
 import java.util.Scanner;
 

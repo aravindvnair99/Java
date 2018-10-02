@@ -1,3 +1,5 @@
+//
+
 import java.util.Scanner;
 
 public class ReverseArray {
@@ -13,15 +15,16 @@ public class ReverseArray {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int[] n = new int[5];
-		System.out.println("Enter the array numbers:");
-		for (int i = 0; i < 5; i++) {
-			n[i] = sc.nextInt();
+		System.out.print("Enter number of elements: ");
+		int n = sc.nextInt();
+		int[] x = new int[n];
+		System.out.println("Enter the array elements:");
+		for (int i = 0; i < x.length; i++) {
+			x[i] = sc.nextInt();
 		}
-		int[] y = Reverse(n);
+		int[] y = Reverse(x);
 		for (int j = 0; j <= y.length - 1; j++) {
 			System.out.print(y[j] + " ");
 		}
 	}
-
 }

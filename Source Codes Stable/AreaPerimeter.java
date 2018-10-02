@@ -1,4 +1,4 @@
-//Area and Perimeter of a rectangle
+// Area and Perimeter of a rectangle
 
 import java.util.Scanner;
 
