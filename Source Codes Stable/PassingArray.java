@@ -1,3 +1,5 @@
+// Passing array as objects
+
 import java.util.Scanner;
 
 public class PassingArray {

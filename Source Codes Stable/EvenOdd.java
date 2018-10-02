@@ -1,4 +1,4 @@
-//Even or odd
+// Even or odd
 
 import java.util.Scanner;
 

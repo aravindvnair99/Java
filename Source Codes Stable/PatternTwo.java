@@ -4,6 +4,7 @@ Program to print pattern:
 ***
 *
 */
+
 public class PatternTwo {
 	public static void main(String args[]) {
 		for (int i = 1; i <= 5; i = i + 2) {
