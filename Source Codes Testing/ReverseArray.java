@@ -1,4 +1,4 @@
-//
+// Reverse and passing an array
 
 import java.util.Scanner;
 
