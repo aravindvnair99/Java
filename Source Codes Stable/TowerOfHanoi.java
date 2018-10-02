@@ -1,4 +1,4 @@
-//Tower of Hanoi demo program
+// Tower of Hanoi demo program using recursions
 
 class TowerOfHanoi {
 	static void towerOfHanoi(int n, char from_rod, char to_rod, char aux_rod) {

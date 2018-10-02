@@ -1,4 +1,4 @@
-//Average of two numbers
+// Average of two numbers
 
 import java.util.Scanner;
 

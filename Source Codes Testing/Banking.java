@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class Banking {
 	public static void main(String[] args) {
@@ -12,7 +12,6 @@ public class Banking {
 			st.create();
 		else if (option == 2) {
 			st.withdraw();
-
 		}
 	}
 }
@@ -45,7 +44,6 @@ class Bank {
 		atm = as.atm();
 		withdraw = balance - (withdraw + fine + atm);
 		return 0;
-
 	}
 
 	private static long bankFine() {

@@ -1,4 +1,4 @@
-//Check if number is prime or composite
+// Check if number is prime or composite
 
 import java.util.Scanner;
 

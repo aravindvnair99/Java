@@ -1,4 +1,4 @@
-//Reverse an array using stack
+// Reverse an array using stack
 
 import java.util.Scanner;
 import java.util.Stack;

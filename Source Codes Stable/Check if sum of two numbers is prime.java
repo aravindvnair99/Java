@@ -1,4 +1,4 @@
-//Check if sum of two numbers is prime or composite
+// Check if sum of two numbers is prime or composite
 
 import java.util.Scanner;
 

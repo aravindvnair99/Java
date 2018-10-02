@@ -10,7 +10,6 @@ public class FirstTen {
 				sum = sum + num;
 				count++;
 			}
-
 		}
 		System.out.println("Sum is : " + sum);
 		sc.close();

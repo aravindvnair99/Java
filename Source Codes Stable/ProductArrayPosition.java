@@ -1,4 +1,4 @@
-// Product of elements in odd and even positions.
+// Product of elements in odd and even positions of array
 
 import java.util.Scanner;
 

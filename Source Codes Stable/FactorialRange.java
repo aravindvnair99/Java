@@ -1,3 +1,5 @@
+// Factorial of numbers within a range using separate objects
+
 import java.util.Scanner;
 
 class Fact {
@@ -12,7 +14,7 @@ class Fact {
 	}
 }
 
-public class ShortTest1 {
+public class FactorialRange {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the lower range");
@@ -25,5 +27,4 @@ public class ShortTest1 {
 			System.out.println("The factorial of " + i + " is " + pr);
 		}
 	}
-
 }
