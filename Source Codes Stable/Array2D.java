@@ -1,4 +1,4 @@
-//Make a 2D array
+// Make a 2D array
 
 import java.util.Scanner;
 
