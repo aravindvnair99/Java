@@ -130,6 +130,14 @@ class BST {
 						pt.left = t.left;
 				} else if ((t.left != null) && (t.right != null)) {
 					// when there are two children to the node to be deleted
+					node temp_parent=null;
+                    node temp=t.right;
+                    while(temp.left!=null){
+                        temp_parent=temp;
+                        temp=temp.left;
+                        }
+                    temp_parent.left=null;
+                    t.key=temp.key;
 				}
 			}
 		}
