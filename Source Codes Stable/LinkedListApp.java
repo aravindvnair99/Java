@@ -1,4 +1,3 @@
-
 /* If divisible by 3 and 5, then insert at front in SLL. Then count and even and odd. Then display*/
 
 import java.util.Scanner;
