@@ -60,8 +60,7 @@ class list {
 					odd++;
 				temp = temp.next;
 			} while (temp != null);
-		}
-		else
+		} else
 			System.out.println("List is empty.");
 		System.out.println("Number of even: " + even);
 		System.out.println("Number of odd: " + odd);
