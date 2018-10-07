@@ -137,7 +137,7 @@ class BST {
                         temp=temp.left;
                         }
                     temp_parent.left=null;
-                    t.key=temp.key;
+                    t.data=temp.data;
 				}
 			}
 		}
