@@ -1,5 +1,7 @@
 //Infix to Postfix expression converter
 
+import java.util.Scanner;
+
 class Stack {
 	private int maxSize;
 	private char[] S;
@@ -42,7 +44,7 @@ class Stack {
 	}
 }
 
-public class InfixPostfixConverter {
+public class InfixToPostfix {
 	// A utility function to check if the given character is operand
 	static boolean isOperand(char ch) {
 		return (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z');
@@ -69,47 +71,48 @@ public class InfixPostfixConverter {
 	// The main function that converts given infix expression
 	// to postfix expression.
 	static void infixToPostfix(String exp) {
-	int i, k;
+		int i;
 
-	// Create a stack of capacity 
-	Stack St = new Stack();
+		// Create a stack of capacity
+		Stack St = new Stack();
 
-	for (i = 0; i < exp.length(); ++i) {
+		for (i = 0; i < exp.length(); ++i) {
 
-	 // If the scanned character is an operand, add it to          output.
-	 if (isOperand(exp.charAt(i)))
-	System.out.print(exp.charAt(i));
+			// If the scanned character is an operand, add it to output.
+			if (isOperand(exp.charAt(i)))
+				System.out.print(exp.charAt(i));
 
-	 // If the scanned character is an ‘(‘, push it to the stack.
-	 else if (exp.charAt(i) == '(')
-	St.push(exp.charAt(i));
+			// If the scanned character is an ‘(‘, push it to the stack.
+			else if (exp.charAt(i) == '(')
+				St.push(exp.charAt(i));
 
-	 // If the scanned character is an ‘)’, pop and output from the stack 
-	 // until an ‘(‘ is encountered.
-	 else if (exp.charAt(i) == ')') {
-	while (!St.isEmpty() && St.topelement() != '(')
-	 System.out.print(St.pop());
-	St.pop();
-	 } else // an operator is encountered
-	 {
-	char f = St.topelement();
-	(
-	 char f2 = exp.charAt(i); +
-	 while (!St.isEmpty() && (Prec(f2) <= Prec(f)))
-		System.out.print(St.pop()); St.push(exp.charAt(i));
-	}
+			// If the scanned character is an ‘)’, pop and output from the stack
+			// until an ‘(‘ is encountered.
+			else if (exp.charAt(i) == ')') {
+				while (!St.isEmpty() && St.topelement() != '(')
+					System.out.print(St.pop());
+				St.pop();
+			} else // an operator is encountered
+			{
+				char f = St.topelement();
+				char f2 = exp.charAt(i);
+				while (!St.isEmpty() && (Prec(f2) <= Prec(f)))
+					System.out.print(St.pop());
+				St.push(exp.charAt(i));
+			}
 
-	 }
+		}
 
-	 // pop all the operators from the stack
-	 while (!St.isEmpty())
-	System.out.print(St.pop());
+		// pop all the operators from the stack
+		while (!St.isEmpty())
+			System.out.print(St.pop());
 	}
 
 	// Driver program to test above functions
 	public static void main(String args[]) {
-		String exp = "a+b*(c+d)";
-		infixToPostfix(exp);
-		// return 0;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the infix expression:");
+		infixToPostfix(sc.nextLine());
+		sc.close();
 	}
 }
