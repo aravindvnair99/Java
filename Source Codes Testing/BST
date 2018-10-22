@@ -1,5 +1,3 @@
-import java.util.*;
-
 class node {
 	int data;
 	node left;
@@ -16,9 +14,11 @@ class BST {
 	node root;
 	int count = 0;
 	int count1 = 0;
+
 	BST() {
 		root = null;
 	}
+
 	void RecInsert(int x) {
 		node pt = null;
 		if (root == null)
@@ -43,11 +43,12 @@ class BST {
 	void inOrder(node t) {
 		if (t != null) {
 			inOrder(t.left);
-			count ++;
+			count++;
 			inOrder(t.right);
 		}
-		
+
 	}
+
 	void deleteNode(int x) {
 		node t = root;
 		node pt = root;
@@ -84,26 +85,27 @@ class BST {
 						pt.left = t.left;
 				} else if ((t.left != null) && (t.right != null)) {
 					// when there are two children to the node to be deleted
-					node temp_parent=null;
-                    node temp=t.right;
-                    while(temp.left!=null){
-                        temp_parent=temp;
-                        temp=temp.left;
-                        }
-                        if(t.right.left == null && t.right.right == null){
-                             t.right = null;
-                         }
-                        if(temp_parent!= null){
-                            temp_parent.left=null;
-                        }
-                        if(temp.right != null){
-                            temp_parent.left = temp.right;
-                        }
-                    t.data=temp.data;
+					node temp_parent = null;
+					node temp = t.right;
+					while (temp.left != null) {
+						temp_parent = temp;
+						temp = temp.left;
+					}
+					if (t.right.left == null && t.right.right == null) {
+						t.right = null;
+					}
+					if (temp_parent != null) {
+						temp_parent.left = null;
+					}
+					if (temp.right != null) {
+						temp_parent.left = temp.right;
+					}
+					t.data = temp.data;
 				}
 			}
 		}
 	}
+
 	void preOrder(node t) {
 		if (t != null) {
 			System.out.print(t.data + " -> ");
@@ -111,17 +113,18 @@ class BST {
 			preOrder(t.right);
 		}
 	}
+
 	void postOrder(node t) {
 		if (t != null) {
 			postOrder(t.left);
 			postOrder(t.right);
-			count1 ++ ;
+			count1++;
 		}
 	}
 }
-public class bst {
+
+public class Main {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 		BST t = new BST();
 		t.RecInsert(50);
 		t.RecInsert(40);
@@ -131,20 +134,10 @@ public class bst {
 		t.RecInsert(45);
 		t.RecInsert(43);
 		t.RecInsert(44);
- 		t.preOrder(t.root);
- 	    System.out.println();
-        t.deleteNode(40);
- 	    t.preOrder(t.root);
+		t.preOrder(t.root);
+		System.out.println();
+		t.deleteNode(40);
+		t.preOrder(t.root);
 // 	    System.out.println((t.count1));
 	}
 }
-		
-		
-		
-		
-		
-		
-		
-		
-		
-
