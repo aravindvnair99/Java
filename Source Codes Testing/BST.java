@@ -138,6 +138,5 @@ public class Main {
 		System.out.println();
 		t.deleteNode(40);
 		t.preOrder(t.root);
-// 	    System.out.println((t.count1));
 	}
 }
