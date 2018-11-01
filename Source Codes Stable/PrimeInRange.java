@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Prime {
+public class PrimeInRange {
 	static void check(int l, int u) {
 		int count = 0, prime = 0;
 		for (int i = l; i <= u; i++) {
