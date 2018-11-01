@@ -55,7 +55,7 @@ class DLL {
 	}
 }
 
-public class Main {
+public class MergeDoublyLinkedList {
 	public static void main(String args[]) {
 		DLL llist1 = new DLL();
 		DLL llist2 = new DLL();
