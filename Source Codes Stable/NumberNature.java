@@ -1,14 +1,17 @@
+import java.util.Scanner;
+
 public class NumberNature {
 	public static void main(String args[]) {
-		int num = -87;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number:");
+		int num = sc.nextInt();
 		if (num > 0) {
-			System.out.println("The number " + num + " is positive");
+			System.out.println(num + " is positive");
 		} else if (num == 0) {
-			System.out.println("The number " + num + " is zero");
+			System.out.println(num + " is zero");
 		} else {
-			System.out.println("The number " + num + " is negative");
+			System.out.println(num + " is negative");
 		}
-
+		sc.close();
 	}
-
 }
