@@ -1,24 +1,22 @@
 class Node {
 	int data;
-	Node next;
+	Node next, prev;
 
-	Node(int d) {
+	Node(Node p,int d, Node n) {
 		data = d;
-		next = null;
+		next = n;
+		prev = p; 
 	}
 }
 
 public class Main {
-	Node head;
+	Node head,tail;
 
-	public void addToTheLast(Node node) {
+	public void insertFront(int el){
 		if (head == null) {
-			head = node;
+			head = tail = new Node(null,el,null);
 		} else {
-			Node temp = head;
-			while (temp.next != null)
-				temp = temp.next;
-			temp.next = node;
+			head = new Node(null, el, head);
 		}
 	}
 
@@ -34,12 +32,12 @@ public class Main {
 	public static void main(String args[]) {
 		Main llist1 = new Main();
 		Main llist2 = new Main();
-		llist1.addToTheLast(new Node(5));
-		llist1.addToTheLast(new Node(10));
-		llist1.addToTheLast(new Node(15));
-		llist2.addToTheLast(new Node(2));
-		llist2.addToTheLast(new Node(3));
-		llist2.addToTheLast(new Node(20));
+		llist1.insertFront(5);
+		llist1.insertFront(10);
+		llist1.insertFront(15);
+		llist2.insertFront(2);
+		llist2.insertFront(3);
+		llist2.insertFront(20);
 		llist1.head = new Gfg().sortedMerge(llist1.head, llist2.head);
 		llist1.printList();
 	}
@@ -47,7 +45,7 @@ public class Main {
 
 class Gfg {
 	Node sortedMerge(Node headA, Node headB) {
-		Node dummyNode = new Node(0);
+		Node dummyNode = new Node(null,0,null);
 		Node tail = dummyNode;
 		while (true) {
 			if (headA == null) {
@@ -58,13 +56,6 @@ class Gfg {
 				tail.next = headA;
 				break;
 			}
-//			if (headA.data <= headB.data) {
-//				tail.next = headA;
-//				headA = headA.next;
-//			} else {
-//				tail.next = headB;
-//				headB = headB.next;
-//			}
 			tail.next = headA;
 			headA = headA.next;
 			tail = tail.next;
