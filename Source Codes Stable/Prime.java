@@ -14,6 +14,7 @@ public class Prime {
 				continue;
 			} else {
 				count = 0;
+				System.out.println(i);
 				prime++;
 			}
 		}
@@ -26,6 +27,7 @@ public class Prime {
 		int l = sc.nextInt();
 		System.out.println("Enter the upper range:");
 		int u = sc.nextInt();
+		System.out.println("The primes are:");
 		check(l, u);
 		sc.close();
 	}
