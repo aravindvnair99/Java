@@ -14,10 +14,9 @@ public class Palindrome {
 		}
 		if (temp == ans) {
 			System.out.println(temp + " is a palindrome numebr");
-		} else if (temp != ans) {
-			System.out.println(temp + " is not a palindrome numebr");
 		} else {
-			System.out.println("There was an error");
+			System.out.println(temp + " is not a palindrome numebr");
 		}
+		sc.close();
 	}
 }

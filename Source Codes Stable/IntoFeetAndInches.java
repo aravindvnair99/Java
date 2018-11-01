@@ -9,5 +9,6 @@ public class IntoFeetAndInches {
 		feet = inch / 12;
 		inch = inch % 12;
 		System.out.println(feet + " Feet and " + inch + " inches");
+		sc.close();
 	}
 }

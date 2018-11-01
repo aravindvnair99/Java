@@ -15,7 +15,7 @@ public class ReverseArray {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter number of elements: ");
+		System.out.print("Enter the size of array: ");
 		int n = sc.nextInt();
 		int[] x = new int[n];
 		System.out.println("Enter the array elements:");
