@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TempConversion {
+public class Main {
 	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
 		double far, cel;
@@ -8,5 +8,6 @@ public class TempConversion {
 		far = sc.nextDouble();
 		cel = ((far - 32) * 5) / 9;
 		System.out.println("The temperature in Celsius is " + cel);
+		sc.close();
 	}
 }

@@ -27,7 +27,5 @@ public class SumOfDiagonalElements {
 		} else {
 			System.out.println("Not a sqaure matrix");
 		}
-
 	}
-
 }

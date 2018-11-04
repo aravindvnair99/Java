@@ -100,9 +100,7 @@ public class InfixToPostfix {
 					System.out.print(St.pop());
 				St.push(exp.charAt(i));
 			}
-
 		}
-
 		// pop all the operators from the stack
 		while (!St.isEmpty())
 			System.out.print(St.pop());
