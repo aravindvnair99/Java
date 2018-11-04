@@ -20,7 +20,6 @@ public class Main {
 			} else
 				s.push("" + c);
 		}
-
 		return s.pop();
 	}
 

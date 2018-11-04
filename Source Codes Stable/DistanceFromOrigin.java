@@ -6,7 +6,6 @@ class point {
 	void dis(double a, double b) {
 		double ans = Math.sqrt(Math.pow((a - x), 2) + Math.pow((b - y), 2));
 		System.out.println(ans);
-
 	}
 
 	void set() {
