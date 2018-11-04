@@ -25,7 +25,7 @@ class stack {
 	}
 }
 
-public class ReplaceReverse {
+public class Main {
 	public static void main(String[] args) {
 		stack st = new stack();
 		System.out.println("Enter the string:");
